@@ -24,6 +24,13 @@ namespace RegexProblems
             //regex.RegexEmail(email);
             //regex.RegexMobileNumber(mobileNumber);
             regex.RegexPassword(password);
+            Console.WriteLine("\nSample emails validation:\n");
+            string[] sample = File.ReadAllLines(@"C:\prasanna\prasanna bridgelabzs\RegularPrograms\RegexProblems\SampleMails.txt");
+            for (int i = 0; i < sample.Length; i++)
+            {
+                string ret = regex.RegexSampleMail(sample[i]);
+                Console.WriteLine(sample[i] + "  --  " + ret);
+            }
         }
     }
 }
