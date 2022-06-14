@@ -8,8 +8,6 @@ namespace RegexProblems
 
 
             RegExpression regex = new RegExpression();
-
-
             Console.WriteLine("Enter Name to check:");
             Console.Write("First Name:");
             string firstName = Console.ReadLine();
@@ -21,11 +19,11 @@ namespace RegexProblems
             string mobileNumber = Console.ReadLine();
             Console.Write("PASSWORD:");
             string password = Console.ReadLine();
-            regex.RegexFirstNameChecker(firstName);
-            regex.RegexLastNameChecker(lastName);
-            regex.RegexEmail(email);
-            regex.RegexMobileNumber(mobileNumber);
-            regex.RegexPassword(password);
+            regex.RegexFirstNameChecker();
+            regex.RegexLastNameChecker();
+            regex.RegexEmail();
+            regex.RegexMobileNumber();
+            regex.RegexPassword();
             Console.WriteLine("\nSample emails validation:\n");
             string[] sample = File.ReadAllLines(@"C:\prasanna\prasanna bridgelabzs\RegularPrograms\RegexProblems\SampleMails.txt");
             for (int i = 0; i < sample.Length; i++)
