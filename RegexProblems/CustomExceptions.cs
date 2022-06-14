@@ -10,7 +10,7 @@ namespace RegexProblems
     {
         public enum ExceptionType
         {
-            INVALID_NAME, INVALID_EMAIL, INVALID_NUMBER, INVALID_PASSWORD
+            INVALID_NAME, INVALID_EMAIL, INVALID_NUMBER, INVALID_PASSWORD,
         }
         ExceptionType type;
         public CustomExceptions(ExceptionType type, string message) : base(message)
