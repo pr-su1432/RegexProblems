@@ -5,9 +5,11 @@ namespace RegexProblems
     {
         public static void Main(string[] args)
         {
-         
-           
+
+
             RegExpression regex = new RegExpression();
+
+
             Console.WriteLine("Enter Name to check:");
             Console.Write("First Name:");
             string firstName = Console.ReadLine();
